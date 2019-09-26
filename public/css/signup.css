@@ -1,0 +1,97 @@
+*{
+  font-family:  Arial;
+
+}
+
+
+body{
+  background: linear-gradient(to right,#00796B, #00e6cb);
+  margin-top: 150px;
+}
+
+.register-left .btn-primary{
+  border-radius: 1.5rem;
+  border:none;
+  width: 120px;
+  background: linear-gradient(120deg,#00796B, #00796B);
+  font-weight: 600;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px;
+
+}
+
+.register-left img{
+  margin-top: 60px;
+  margin-bottom: 18px;
+  width: 40px;
+  animation: mover 1s infinite alternate;
+}
+
+.register-left{
+  text-align: center;
+  color: #212121;
+  padding: 30px;
+}
+
+.register-left p{
+  padding: 20px 20px 0px;
+
+}
+
+.register-right{
+  border: none;
+  background: #ffffff;
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+  padding: 50px;
+}
+
+.register-right h2{
+  text-align: center;
+  margin-bottom: 10px;
+  color: #757575;
+}
+
+.register-right .btn-primary{
+  float: right;
+  border-radius: 1.5rem;
+  border:none;
+  width: 120px;
+  background: #009688;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px;
+
+}
+
+.register-form{
+  padding: 30px;
+}
+
+.form-group{
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  width:70%;
+
+}
+
+.form-group input:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.form-control{
+
+  outline: none;
+  background: none;
+  border:none;
+  width: 100%;
+
+}
+
+@keyframes mover {
+  0%{transform: translateY(0);}
+  100%{transform: translateY(-20px);}
+}

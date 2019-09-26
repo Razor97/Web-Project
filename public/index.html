@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+    <title>Welcome</title>
+  </head>
+  <body>
+    <form action="/loginAuth"  method="post" class="login-form">
+      <h1> Login</h1>
+
+      <div class = "txtbx">
+        <input type="text" name="username">
+        <span data-placeholder="Username"></span>
+      </div>
+
+      <div class = "txtbx">
+        <input type="password" name="password">
+        <span data-placeholder="Password"></span>
+      </div>
+
+      <input type="submit" class="logbtn"  value="Login">
+
+      <div class="bottom-text">
+        Dont have account?<a href="html/signup.html">Sign up</a>
+      </div>
+      </form>
+      <script type="text/javascript">
+        $(".txtbx input").on("focus",function(){
+          $(this).addClass("focus");
+        });
+
+        $(".txtbx input").on("blur",function(){
+          if($(this).val == "")
+          $(this).removeClass("focus");
+        });
+      </script>
+  </body>
+</html>
