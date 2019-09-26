@@ -38,10 +38,11 @@ app.use(express.static(__dirname + '/public'));
 
 app.post('/loginAuth',function(req,res){
 //convert password to hash and check for authentication
+//no need to check if password is empty
   if(req.body.username.length!=0 && req.body.password.length!=0){
     pool.getConnection(function(err,conn){
     conn.query("SELECT PASSWORD FROM USERDETAILS WHERE USERNAME=?",[req.body.username],function(err,result){
-      console.log(result);
+    var qpassword = result.length>0?result[0].PASSWORD:"";
     bcrypt.compare(req.body.password,result[0].PASSWORD,function(err,r){
       if(r)
       {
@@ -57,7 +58,7 @@ app.post('/loginAuth',function(req,res){
   });
 }
 
-console.log("Invalid");
+
 }); //listen to http post message in the route /loginAuth
 
 
@@ -96,5 +97,5 @@ app.post('/register',function(req,res){
 
 
 var server=app.listen(8080,function() {
-  console.log("Server running!");
+  console.log("Server running!running at port 8080");
 });

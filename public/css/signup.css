@@ -1,6 +1,6 @@
 *{
   font-family:  Arial;
-
+  text-decoration: none;
 }
 
 
@@ -79,7 +79,7 @@ body{
 
 .form-group input:focus{
   outline: none;
-  box-shadow: none;
+  box-shadow: none; 
 }
 
 .form-control{
