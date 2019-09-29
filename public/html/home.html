@@ -8,6 +8,8 @@
 <!-- Material Design Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
 
+<link rel="stylesheet" href="../css/home.css">
+
 
 
 <!-- JQuery -->
@@ -19,6 +21,7 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
 
+<script src="../scripts/chat.js" charset="utf-8"></script>
 
 <style>
   .dropdown-menu{
@@ -105,7 +108,7 @@
 <!--Carousel Wrapper-->
 
 
-<div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel" style="display:none;">
   <!--Indicators-->
   <ol class="carousel-indicators">
     <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
@@ -196,6 +199,23 @@
 <!--Carousel Wrapper-->
 
 <!--/.Carosel-->
+
+<div class="chat_div">
+<button  class="chat_open" id="chat_001" onclick="display()">Friends</button>
+</div>
+
+<div class="chat_002" id="0">
+  <!--sheeet-->
+    <div class="top">
+      <span class="dot fa fa-times" onclick="display(this.parentElement.parentElement.id)"></span>
+    </div>
+
+  <div class = "content">
+    <h3>Browser Windowsss</h>
+      <button type="button" name="button" onclick="clone()">clone</button>
+  </div>
+
+
 
 </body>
 </html>
